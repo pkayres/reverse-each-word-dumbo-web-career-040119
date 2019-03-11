@@ -1,7 +1,10 @@
 def reverse_each_word(word)
-  reversed = []
-    reversed.push(word)
-    reversed.each do |x|
-    return  x.reverse!
-    end
+    reversed = []
+    words = word.split(" ")
+    words.collect do |x|
+        reversed.push(x.reverse)
+       
   end
+return reversed.join(" ") 
+  end
+
